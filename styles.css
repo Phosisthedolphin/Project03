@@ -220,6 +220,7 @@ main h1 {
     font-family: "corpJP";
     font-size: 48px;
     color: #7b0016;
+<<<<<<< HEAD
     padding: 5px;
 }
 .main-text {
@@ -243,6 +244,16 @@ main h1 {
     transform: scale(0.8);
 }
 .famipic:hover {
+=======
+}
+.diskpic {
+    height: 400px;
+    width: 400px;
+    transition: 0.5s;
+    transform: scale(0.8);
+}
+.diskpic:hover {
+>>>>>>> 86fc407dbfefaa49114ecd96addeb22a49e38042
     transform: scale(1);
 }
 .product-container,
