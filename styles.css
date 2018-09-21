@@ -1,0 +1,303 @@
+/* * * * * * * * * * * * * * * * * * * * *
+General
+* * * * * * * * * * * * * * * * * * * * */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: "texgyreadventure";
+    src: url(./font/texgyreadventor-bold.otf);   
+}
+@font-face {
+    font-family: "nicokaku";
+    src: url(./font/nicokaku_v1.ttf);
+}
+@font-face {
+    font-family: "prstartk";
+    src: url(./font/prstartk.ttf);
+}
+@font-face {
+    font-family: "corpjp";
+    src: url(./font/corpjp.ttf);
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.debugger {
+    background:red;
+}
+body {
+    background: #f0dfb3;
+}
+/* ************************************
+HEADER
+************************************ */
+header {
+    background: #7b0016;
+    height: 96px;
+}
+header ul {
+    height: 100%;
+    margin-bottom: 0;
+    display: flex;
+    font-family: 'prstartk';
+    justify-content: right;
+    
+}
+header ul li {
+    list-style-type: none;
+    font-family: 'prstartk';
+    background-image: linear-gradient(#444, #111);
+    border-radius: 60px;
+    box-shadow: 0 5px black;
+    padding: 0 5px;
+    position: relative;
+    margin: 5px;
+}
+header ul li a {
+
+    /* Alternate */
+
+    height: 66px;
+    padding: 5px 15px;
+
+    /* Other Alternate */
+
+    display: flex;
+    align-items: center;
+    font-family: "prstartk";
+    color: #f0dfb3; /*#b39863;*/
+    font-size: 12px;
+    margin: 0;
+    text-shadow: 2px 2px black;
+}
+header ul li:active {
+    background: #222;
+    box-shadow: 0 2px black;
+    top: 2px;
+    text-decoration: none;
+}
+header ul li a:hover {
+    text-decoration: none;
+    color: /* #e6e6e6 */  white;
+}
+header ul li:hover {
+    bottom: 1px;
+}
+.logo {
+    color: /* #f0dfb3 */ #f0dfb3;
+    height: 100%;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+    width: 100%;
+    text-shadow: 2px 1px black;
+    
+}
+.logotext {
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+.logo span {
+    margin-left: 10px;
+}
+header h2 {
+    font-size: 40px;
+    white-space: nowrap;
+    padding-left: 2px;
+    padding-top: 10px;
+    font-family: "texgyreadventure";
+    border-bottom: 3px solid;
+    margin: 0;
+    box-shadow: 0 2px 2px -2px black;
+}
+header h3 {
+    font-size: 24px;
+    white-space: nowrap;
+    padding-left: 2px;
+    padding-top: 10px;
+    font-family: "nicokaku";
+    margin-top: -10px;
+}
+header .container {
+    margin: 0px;
+}
+navlinks {
+    justify-content: right;
+    font-family: 'prstartk';
+}
+.pulse {
+    overflow:hidden !important;
+}
+.pulse-hero {
+    background-image: url(./img/pulsetrans.png);
+    background-repeat: repeat-x;
+    width: 1000px;
+    height: 10%;
+    position: absolute;
+    top: 680px;
+}
+.pulse-hero-middle {
+    background-image: url(./img/pulse-middle-color.png);
+    position: absolute;
+    width: 360px;
+    height: 200px;
+    top: 561px;
+    left: 1000px;
+}
+.pulse-hero-lower {
+    background-image: url(./img/pulse_lower.png);
+    position: absolute;
+    width: 200px;
+    height: 66px;
+    top: 754px;
+    left: 999px;
+    z-index: 1050;
+}
+.pulse-hero-right {
+    background-image: url(./img/pulsetrans.png);
+    background-repeat: repeat-x;
+    width: 542px;
+    height: 100%;
+    position: absolute;
+    left: 1360px;
+    top: 680px;
+}
+/* *********************************
+HERO
+********************************* */
+
+.hero {
+    height: 600px;
+    background: gray;
+    background-image: linear-gradient(rgba(145, 3, 27, 0.6) 40%, rgba(21,65,196, 1.5)), url("./img/famiunsplash.jpg");
+    background-position: 50%, 10%;
+    background-size: cover;
+    display: flex;
+}
+.hero-content {
+    margin: auto;
+    width: 50%;
+}
+.hero h1 {
+    font-family: 'prstartk';
+    color: #f0dfb3;
+    font-size: 32px;
+    text-shadow: 2px 2px black;
+    text-transform: uppercase;
+    align-items: top;
+}
+.hero p {
+    color: #f0dfb3;
+    text-shadow: 2px 2px black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+     
+
+/* ***********************************0IN CONTENT
+*********************************** */
+main {
+    padding: 80px 100px;
+    width: 100%;
+    /* align-content: center; */
+    margin: 100px 100px 10px 20px;
+    display: flex;
+    background: #f0dfb3;
+    flex-wrap: wrap;
+}
+main h1 {
+    display: flex;
+    text-align: left;
+    font-family: "corpJP";
+    font-size: 48px;
+    color: #7b0016;
+    padding: 5px;
+}
+.main-text {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+.diskpic {
+    height: 300px;
+    width: 300px;
+    transition: 0.2s;
+    transform: scale(0.8);
+}
+.diskpic:hover {
+    transform: scale(1);
+}
+.famipic {
+    height: 400px;
+    width: 400px;
+    transition: 0.2s;
+    transform: scale(0.8);
+}
+.famipic:hover {
+    transform: scale(1);
+}
+.product-container,
+.product-video {
+    width: 100%;
+    display: flex;
+    padding: 40px 40px;
+    margin: auto;
+    flex-wrap: wrap;
+    max-width: 900px;
+    align-content: center;
+    justify-content: center;
+    background: white;
+    border: 2px solid #7b0016;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.product-video iframe {
+    padding: 0 0 20px 0;
+}
+.product-container-text {
+    display: flex;
+    margin: auto;
+}
+.product-container h2,
+.product-video h2 {
+    padding:30px;
+    font-family: "corpJP";
+    display: flex;
+    color: #7b0016;
+}
+.product-container p {
+    padding: 10px 0;
+    display: flex;
+    max-width: 200px;
+}
+
+
+/* **************************************
+FOOTER CONTENT
+************************************** */
+
+footer {
+    height: 300px;
+    background: #7b0016;
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+footer li {
+    list-style: none;
+    margin-top: 8px;
+}
+footer h2 {
+    color: #4d4d4d;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
