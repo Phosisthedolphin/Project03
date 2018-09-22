@@ -1,5 +1,5 @@
 /* * * * * * * * * * * * * * * * * * * * *
-General
+GENERAL
 * * * * * * * * * * * * * * * * * * * * */
 * {
     box-sizing: border-box;
@@ -62,18 +62,12 @@ header ul li {
     margin: 5px;
 }
 header ul li a {
-
-    /* Alternate */
-
     height: 66px;
     padding: 5px 15px;
-
-    /* Other Alternate */
-
     display: flex;
     align-items: center;
     font-family: "prstartk";
-    color: #f0dfb3; /*#b39863;*/
+    color: #f0dfb3;
     font-size: 12px;
     margin: 0;
     text-shadow: 2px 2px black;
@@ -86,7 +80,7 @@ header ul li:active {
 }
 header ul li a:hover {
     text-decoration: none;
-    color: /* #e6e6e6 */  white;
+    color: white;
 }
 header ul li:hover {
     bottom: 1px;
@@ -116,14 +110,14 @@ header .hamburger{
 }
 .button:hover {
     text-decoration: none;
-    color: /* #e6e6e6 */  white;
+    color: white;
     bottom: 1px;
 }
 header i {
     display: flex;
 }
 .logo {
-    color: /* #f0dfb3 */ #f0dfb3;
+    color: #f0dfb3;
     height: 100%;
     margin-right: auto;
     font-family: 'Roboto', sans-serif;
@@ -195,7 +189,7 @@ navlinks {
 .pulse-hero-right {
     background-image: url(./img/pulsetrans.png);
     background-repeat: repeat-x;
-    width: 542px;
+    width: 4800px;
     height: 100%;
     position: absolute;
     left: 1360px;
@@ -232,18 +226,19 @@ HERO
     font-weight: 600;
 }
 
-     
-
-/* ***********************************0IN CONTENT
+/************************************
+MAIN CONTENT
 *********************************** */
 main {
     padding: 80px 100px;
     width: 100%;
-    /* align-content: center; */
     margin: 100px 100px 10px 20px;
     display: flex;
     background: #f0dfb3;
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 main h1 {
     display: flex;
@@ -287,8 +282,7 @@ main h1 {
     max-width: 900px;
     align-content: center;
     justify-content: center;
-    background: #FFEDCB;/* #EDDCAA;/* white; */
-    /* border: 2px solid #7b0016; */
+    background: #FFEDCB;
     border-radius: 3px;
     margin-bottom: 10px;
     border-radius: 3px;
@@ -320,17 +314,23 @@ main h1 {
     display: flex;
     max-width: 200px;
 }
-
-
-/* **************************************
+main .button {
+    width: 150px;
+    font-family: 'prstartk';
+    font-size: 14px;
+    align-items: center;
+    margin: auto;
+}
+/***************************************
 FOOTER CONTENT
 ************************************** */
-
 footer {
-    height: 300px;
+    height: 270px;
     background: #7b0016;
     margin: 0 0 30px 0;
     padding: 0;
+    margin: auto;
+    display: flex;
 }
 footer li {
     list-style: none;
@@ -342,11 +342,27 @@ footer h2 {
     text-transform: uppercase;
     margin: 0 0 20px 0;
 }
+.footerlinks {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.footertext {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin: auto;
+    color: #f0dfb3;
+    padding-right: 20px;
+    text-shadow: 2px 2px black;
+}
 
-/* ********************************************************************************
-MEDIA BREAK POINTS (I apologize for the length of my code, I do quite like you.)
-******************************************************************************** */
-
+/* ******************************************************************************************
+MEDIA BREAK POINTS (I apologize for the length of my code, I do quite like you, not personal)
+******************************************************************************************** */
 @media only screen and (max-width: 900px) {
     header {
         height: 60px;
@@ -382,8 +398,8 @@ MEDIA BREAK POINTS (I apologize for the length of my code, I do quite like you.)
         width: 320px;
     }
     main {
-        margin: 100px 100px 10px 20px;
-        padding: 20px 25px;
+        margin: auto;
+        padding: 50px 25px;
     }
 }
 @media only screen and (max-width: 430px) {
