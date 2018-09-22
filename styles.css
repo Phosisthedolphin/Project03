@@ -91,6 +91,37 @@ header ul li a:hover {
 header ul li:hover {
     bottom: 1px;
 }
+header .hamburger{
+    display: flex;
+    justify-content: right;
+}
+.button {
+    width: 46px;
+    height: 46px;
+    background-image: linear-gradient(#444, #111);
+    border-radius: 60px;
+    box-shadow: 0 5px black;
+    border: none;
+    margin: 5px;
+    text-align: center;
+    color: #f0dfb3;
+    position: relative;
+    padding-top: 8px;
+}
+.button:active {
+    background: #222;
+    box-shadow: 0 2px black;
+    top: 2px;
+    text-decoration: none;
+}
+.button:hover {
+    text-decoration: none;
+    color: /* #e6e6e6 */  white;
+    bottom: 1px;
+}
+header i {
+    display: flex;
+}
 .logo {
     color: /* #f0dfb3 */ #f0dfb3;
     height: 100%;
@@ -106,7 +137,7 @@ header ul li:hover {
     margin-bottom: 8px;
 }
 .logo span {
-    margin-left: 10px;
+    padding-top: 10px;
 }
 header h2 {
     font-size: 40px;
@@ -123,7 +154,7 @@ header h3 {
     white-space: nowrap;
     padding-left: 2px;
     padding-top: 10px;
-    font-family: "corpJP";
+    font-family: "Nico Moji";
     margin-top: -10px;
 }
 header .container {
@@ -217,7 +248,7 @@ main {
 main h1 {
     display: flex;
     text-align: left;
-    font-family: "corpJP";
+    font-family: "Nico Moji";
     font-size: 48px;
     color: #7b0016;
     padding: 5px;
@@ -226,6 +257,7 @@ main h1 {
     display: flex;
     margin: auto;
     flex-direction: column;
+    font-weight: 600;
 }
 .diskpic {
     height: 300px;
@@ -255,22 +287,31 @@ main h1 {
     max-width: 900px;
     align-content: center;
     justify-content: center;
-    background: white;
-    border: 2px solid #7b0016;
-    border-radius: 5px;
-    margin-bottom: 5px;
+    background: #FFEDCB;/* #EDDCAA;/* white; */
+    /* border: 2px solid #7b0016; */
+    border-radius: 3px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    border-top: none;
+    border-bottom: 1px solid rgb(177,164,132);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.39), 0 -1px 1px #f0dfb3, 0 1px 0 #f0dfb3;
 }
 .product-video iframe {
     padding: 0 0 20px 0;
+    margin: auto;
 }
 .product-container-text {
     display: flex;
     margin: auto;
 }
+.product-container-text p {
+    font-weight: 600;
+}
 .product-container h2,
 .product-video h2 {
     padding:30px;
-    font-family: "corpJP";
+    font-family: "Nico Moji";
     display: flex;
     color: #7b0016;
 }
@@ -300,4 +341,65 @@ footer h2 {
     font-size: 0.9em;
     text-transform: uppercase;
     margin: 0 0 20px 0;
+}
+
+/* ********************************************************************************
+MEDIA BREAK POINTS (I apologize for the length of my code, I do quite like you.)
+******************************************************************************** */
+
+@media only screen and (max-width: 900px) {
+    header {
+        height: 60px;
+    }
+    header ul li {
+        display: none;
+    }
+    header h2 {
+        font-size: 20px;
+        border-bottom: 1px solid;
+    }
+    header h3 {
+        font-size: 16px;
+    }
+    .hero {
+        height: 650px;
+    }
+    main .product-container-text h2 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 575px) {
+    main .diskpic {
+        height: 200px;
+        width: 200px;
+    }
+    main .famipic {
+        height: 200px;
+        width: 200px;
+    }
+    main iframe {
+        height: 260px;
+        width: 320px;
+    }
+    main {
+        margin: 100px 100px 10px 20px;
+        padding: 20px 25px;
+    }
+}
+@media only screen and (max-width: 430px) {
+    main .diskpic {
+        height: 100px;
+        width: 100px;
+    }
+    main iframe {
+        display: none;
+    }
+    main .product-video {
+        display: none;
+    }
+}
+@media only screen and (min-width: 900px) {
+    header .hamburger {
+        display: none
+    }
 }
