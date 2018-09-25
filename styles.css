@@ -199,19 +199,28 @@ navlinks {
 HERO
 ********************************* */
 
-.hero {
+.hero,
+.hero-about {
     height: 600px;
     background: gray;
+    display: flex;
+}
+.hero {
     background-image: linear-gradient(rgba(145, 3, 27, 0.6) 40%, rgba(21,65,196, 1.5)), url("./img/famiunsplash.jpg");
     background-position: 50%, 10%;
     background-size: cover;
-    display: flex;
+}
+.hero-about {
+    background-image: linear-gradient(rgba(145, 3, 27, 0.6) 40%, rgba(21,65,196, 1.5)), url("./img/famicontroller.png");
+    background-position: 50%, 30%;
+    background-size: cover;
 }
 .hero-content {
     margin: auto;
     width: 50%;
 }
-.hero h1 {
+.hero h1,
+.hero-about h1 {
     font-family: 'prstartk';
     color: #f0dfb3;
     font-size: 32px;
@@ -219,7 +228,8 @@ HERO
     text-transform: uppercase;
     align-items: top;
 }
-.hero p {
+.hero p,
+.hero-about p {
     color: #f0dfb3;
     text-shadow: 2px 2px black;
     font-size: 18px;
@@ -291,6 +301,27 @@ main h1 {
     border-bottom: 1px solid rgb(177,164,132);
     box-shadow: inset 0 1px 3px rgba(0,0,0,.39), 0 -1px 1px #f0dfb3, 0 1px 0 #f0dfb3;
 }
+.product-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+}
+.profile {
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+.profile img {
+    border: 3px solid #7b0016;
+    margin-bottom: 20px;
+}
 .product-video iframe {
     padding: 0 0 20px 0;
     margin: auto;
@@ -313,6 +344,26 @@ main h1 {
     padding: 10px 0;
     display: flex;
     max-width: 200px;
+}
+.icon {
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.iconbox {
+    width: 160px;
+    height: 160px;
+    background: #FFEDCB;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    box-shadow: 2px 2px #222;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #222
+
 }
 main .button {
     width: 150px;
@@ -377,7 +428,8 @@ MEDIA BREAK POINTS (I apologize for the length of my code, I do quite like you, 
     header h3 {
         font-size: 16px;
     }
-    .hero {
+    .hero,
+    .hero-about {
         height: 650px;
     }
     main .product-container-text h2 {
@@ -399,6 +451,7 @@ MEDIA BREAK POINTS (I apologize for the length of my code, I do quite like you, 
     }
     main {
         margin: auto;
+        margin-top: 20px;
         padding: 50px 25px;
     }
 }
