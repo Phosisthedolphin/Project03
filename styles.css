@@ -317,6 +317,7 @@ main h1 {
     align-content: center;
     margin-bottom: 40px;
     margin-top: -20px;
+    padding: 10px;
 }
 .profile img {
     border: 3px solid #7b0016;
