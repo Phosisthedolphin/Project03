@@ -1,3 +1,24 @@
+/*******************************************
+Hi Gary! Let the hatred begin. I tried to
+get everything converted to SASS but gave
+up when I realized there would literally
+be no time. Instead I present to you
+an excess of unwieldy CSS. I apologize
+in advance. You can actually see the
+progression of me being complete garbage
+at this to getting marginally better. If
+I am lucky. Thank you, your course was
+very good. My friend Clayton who had you
+as an instructor also told me you were
+one of his faves when he had you as an
+instructor.
+
+Anyways, good luck, please be gentle.
+
+Joel
+
+*******************************************/
+
 /* * * * * * * * * * * * * * * * * * * * *
 GENERAL
 * * * * * * * * * * * * * * * * * * * * */
@@ -391,6 +412,9 @@ main .button {
     font-size: 14px;
     align-items: center;
     margin: auto;
+}
+form-content {
+    width: 80%;
 }
 /***************************************
 FOOTER CONTENT
