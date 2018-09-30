@@ -89,7 +89,8 @@ header .hamburger{
     display: flex;
     justify-content: right;
 }
-.button {
+.button,
+.purchase-card .button {
     width: 46px;
     height: 46px;
     background-image: linear-gradient(#444, #111);
@@ -154,7 +155,7 @@ header h3 {
 header .container {
     margin: 0px;
 }
-navlinks {
+.navlinks {
     justify-content: right;
     font-family: 'prstartk';
 }
@@ -200,7 +201,8 @@ HERO
 ********************************* */
 
 .hero,
-.hero-about {
+.hero-about,
+.hero-store {
     height: 600px;
     background: gray;
     display: flex;
@@ -215,12 +217,18 @@ HERO
     background-position: 50%, 30%;
     background-size: cover;
 }
+.hero-store {
+    background-image: linear-gradient(rgba(145, 3, 27, 0.6) 40%, rgba(21,65,196, 1.5)), url("./img/famigames.jpg");
+    background-position: 50%, 30%;
+    background-size: cover;
+}
 .hero-content {
     margin: auto;
     width: 50%;
 }
 .hero h1,
-.hero-about h1 {
+.hero-about h1,
+.hero-store h1 {
     font-family: 'prstartk';
     color: #f0dfb3;
     font-size: 32px;
@@ -229,7 +237,8 @@ HERO
     align-items: top;
 }
 .hero p,
-.hero-about p {
+.hero-about p,
+.hero-store p {
     color: #f0dfb3;
     text-shadow: 2px 2px black;
     font-size: 18px;
@@ -300,6 +309,16 @@ main h1 {
     border-top: none;
     border-bottom: 1px solid rgb(177,164,132);
     box-shadow: inset 0 1px 3px rgba(0,0,0,.39), 0 -1px 1px #f0dfb3, 0 1px 0 #f0dfb3;
+}
+.purchase-card {
+    width: 250px;
+    height: 300px;
+    border: 1px solid #f0dfb3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
 }
 .product-content {
     display: flex;
@@ -430,7 +449,8 @@ MEDIA BREAK POINTS (I apologize for the length of my code, I do quite like you, 
         font-size: 16px;
     }
     .hero,
-    .hero-about {
+    .hero-about,
+    .hero-store {
         height: 650px;
     }
     main .product-container-text h2 {
